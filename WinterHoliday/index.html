@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 16</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo"><a href="#">Logo</a></div>
+    <div class="firstBox">
+        <form action="" autocomplete="off">
+            <h3>Add Car to parking Lox</h3>
+            <label for="owner">Owner</label>
+            <input type="text" name="owner" id="owner" required>
+            <label for="car">Car</label>
+            <input type="text" name="car" id="car" required>
+            <label for="licence">Licence NO</label>
+            <input type="text" name="licence" id="licence" required>
+            <div class="dateBox">
+                <div class="date">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" name="startDate" id="startDate" required>
+                </div>
+                <div class="date">
+                    <label for="endDate">End Date</label>
+                    <input type="date" name="endDate" id="endDate" required>
+                </div>
+            </div>
+            <input type="submit" value="Add Car" class="btn">
+        </form>
+    </div>
+    <hr>
+    <div class="secondBox">
+
+        <h3>Cars List in Car Parking</h3>
+        <form action="#" class="searchBox">
+            <input type="search" name="search" id="search" placeholder="Search">
+        </form>
+        <table class="carListTabel" cellspacing="0" >
+            <tr id="headings">
+                <th>Owner</th>
+                <th>Car</th>
+                <th>Licence NO</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Active</th>
+            </tr>
+
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
